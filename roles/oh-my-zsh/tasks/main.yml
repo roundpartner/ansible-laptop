@@ -1,0 +1,28 @@
+---
+- name: install git
+  homebrew:
+    name: git
+    state: present
+
+- name: install zsh
+  homebrew:
+    name: zsh
+    state: present
+
+- name: clone oh my zsh
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    dest: ~/.oh-my-zsh
+    depth: 1
+    clone: yes
+    
+- name: copy zsh default config
+  copy:
+    src: ~/.oh-my-zsh/templates/zshrc.zsh-template
+    dest: ~/.zshrc
+    remote_src: yes
+    
+- name: Prompt user to run command to complete installation
+  pause:
+    prompt: "now run: chsh -s $(grep /zsh$ /etc/shells | tail -1)"
+...
