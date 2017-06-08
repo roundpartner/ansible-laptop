@@ -1,0 +1,21 @@
+---
+- name: install git
+  homebrew:
+    name: git
+    state: present
+
+- name: install global git config template
+  template:
+    src: gitconfig
+    dest: ~/.gitconfig
+
+- name: install global git ignore template
+  template:
+    src: gitignore
+    dest: ~/.gitignore_global
+
+- name: install gpg
+  homebrew:
+    name: gpg
+    state: present
+...

@@ -3,4 +3,5 @@
   remote_user: root
   roles:
     - test
+    - git
     - oh-my-zsh

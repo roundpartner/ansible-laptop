@@ -1,5 +1,6 @@
 ---
 - hosts: localhost
   roles:
-    - test
+    - git
+    - oh-my-zsh
 ...

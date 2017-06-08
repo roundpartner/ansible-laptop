@@ -1,0 +1,10 @@
+[core]
+        excludesfile = /Users/toml/.gitignore_global
+
+[user]
+        email = toml@giffgaff.co.uk
+        name = Tom Lorentsen
+        signingkey = B5E87C7893A9417E
+
+[commit]
+        gpgsign = true

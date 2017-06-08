@@ -2,3 +2,8 @@
 
 # Laptop
 Configure my laptop with ansible
+
+Run with
+```bash
+ansible-playbook playbook.yml 
+```
