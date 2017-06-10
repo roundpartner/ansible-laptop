@@ -2,5 +2,9 @@
 - hosts: localhost
   roles:
     - git
+    - zend-framework
+      zf_version: 1.12.9
+      zf_path: /usr/share/php/
+      strip_zf_requires: no
     - oh-my-zsh
 ...
