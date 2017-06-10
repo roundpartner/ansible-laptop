@@ -5,3 +5,6 @@
     - test
     - git
     - oh-my-zsh
+    - vagrant
+    - sudo
+    - styleguide

@@ -10,12 +10,19 @@
     dest: ~/.oh-my-zsh
     depth: 1
     clone: yes
-    
+
+- name: clone giffgaff plugin
+  git:
+    repo: https://github.com/roundpartner/zhs-giffgaff.git
+    dest: ~/.oh-my-zsh/custom/plugins/giffgaff
+    depth: 1
+    clone: yes
+    update: yes
+
 - name: copy zsh default config
-  copy:
-    src: ~/.oh-my-zsh/templates/zshrc.zsh-template
+  template:
+    src: zshrc
     dest: ~/.zshrc
-    remote_src: yes
     
 - name: Prompt user to run command to complete installation
   pause:

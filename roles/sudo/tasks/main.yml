@@ -1,0 +1,7 @@
+---
+- name: install sudoless host updater
+  become: yes
+  template:
+    src: vagrant_hostsupdater
+    dest: /etc/sudoers.d/vagrant_hostsupdater
+...

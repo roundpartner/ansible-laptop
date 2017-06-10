@@ -1,0 +1,8 @@
+---
+- name: install vagrant plugins
+  command: "vagrant plugin install {{ item }}"
+  with_items:
+    - vagrant-hostsupdater
+    - vagrant-triggers
+    - vagrant-cachier
+...

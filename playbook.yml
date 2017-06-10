@@ -2,5 +2,7 @@
 - hosts: localhost
   roles:
     - git
+    - vagrant
     - oh-my-zsh
+    - styleguide
 ...
