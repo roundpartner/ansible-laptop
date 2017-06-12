@@ -2,9 +2,11 @@
 - hosts: localhost
   roles:
     - git
-    - zend-framework
+    - coreutils
+    - zend-framework:
+      role: zend-framework
       zf_version: 1.12.9
-      zf_path: /usr/share/php/
+      zf_path: ~/
       strip_zf_requires: no
     - vagrant
     - oh-my-zsh

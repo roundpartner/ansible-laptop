@@ -5,12 +5,12 @@ Configure my laptop with ansible
 
 # Installing
 ```bash
-ansible-galaxy install -r ansible/requirements.yml -f
+ansible-galaxy install -r requirements.yml
 ```
 
 # Running
 
 Run with
 ```bash
-ansible-playbook playbook.yml 
+ansible-playbook playbook.yml
 ```
