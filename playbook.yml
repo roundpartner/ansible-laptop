@@ -9,6 +9,6 @@
       zf_path: ~/
       strip_zf_requires: no
     - vagrant
-    - oh-my-zsh
     - styleguide
+    - oh-my-zsh
 ...
