@@ -1,0 +1,3 @@
+- name: zend-framework
+  src: https://github.com/giffgaff/ansible-zend-framework.git
+  version: origin/master
