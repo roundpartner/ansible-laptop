@@ -22,7 +22,8 @@ install:
   - printf '[defaults]\nroles_path=./roles' >ansible.cfg
 
   # Install required dependencies from galaxy
-  - ansible-galaxy install -r requirements.yml
+  ## will not work for private repos
+  #- ansible-galaxy install -r requirements.yml
 
 script:
   # Basic role syntax check
