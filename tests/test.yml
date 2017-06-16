@@ -9,8 +9,4 @@
     - vagrant
     - sudo
     - styleguide
-    - zend-framework:
-      role: zend-framework
-      zf_version: 1.12.9
-      zf_path: /usr/share/php/
-      strip_zf_requires: no
+...
