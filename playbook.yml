@@ -3,10 +3,12 @@
   roles:
     - git
     - coreutils
+    - idea-projects
+    - giffgaff-projects
     - zend-framework:
       role: zend-framework
       zf_version: 1.12.9
-      zf_path: ~/
+      zf_path: ~/IdeaProjects/zend-framework-1.12.9/Zend/
       strip_zf_requires: no
     - vagrant
     - styleguide

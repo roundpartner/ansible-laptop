@@ -1,3 +1,7 @@
 - name: zend-framework
   src: https://github.com/thomaslorentsen/ansible-zend-framework.git
   version: origin/master
+
+- name: giffgaff-projects
+  src: https://github.com/roundpartner/ansible-giffgaff-projects.git
+  version: origin/master

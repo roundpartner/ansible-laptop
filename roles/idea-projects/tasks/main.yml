@@ -1,0 +1,9 @@
+- name: create idea project directory
+  file:
+    path: ~/IdeaProjects
+    state: directory
+
+- name: create folder for zend framework
+  file:
+    path: ~/IdeaProjects/zend-framework-1.12.9
+    state: directory

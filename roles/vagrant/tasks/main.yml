@@ -1,8 +1,13 @@
 ---
+- name: check installed plugins
+  command: vagrant plugin list
+  register: vagrant_plugins
+
 - name: install vagrant plugins
   command: "vagrant plugin install {{ item }}"
   with_items:
     - vagrant-hostsupdater
     - vagrant-triggers
     - vagrant-cachier
+  when: 'item not in vagrant_plugins.stdout'
 ...
