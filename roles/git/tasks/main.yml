@@ -8,6 +8,11 @@
   template:
     src: gitconfig
     dest: ~/.gitconfig
+    
+- name: install git message config template
+  template:
+    src: gitmessage.txt
+    dest: ~/.gitmessage.txt
 
 - name: install global git ignore template
   template:
