@@ -1,5 +1,6 @@
 [core]
         excludesfile = /Users/toml/.gitignore_global
+        editor = nano
 
 [user]
         email = toml@giffgaff.co.uk
