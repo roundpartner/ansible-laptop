@@ -9,4 +9,4 @@
 
 [commit]
         gpgsign = true
-        commit.template ~/.gitmessage.txt
+        template ~/.gitmessage.txt
