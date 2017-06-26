@@ -2,11 +2,11 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - test
     - git
     - coreutils
     - oh-my-zsh
     - vagrant
     - sudo
     - styleguide
+    - idea-projects
 ...
