@@ -3,6 +3,10 @@
   roles:
     - git
     - coreutils
+    - composer:
+      role: composer
+      composer_home_owner: toml
+      composer_home_group: GIFFGAFF\Domain Users
     - idea-projects
     - giffgaff-projects
     - zend-framework:

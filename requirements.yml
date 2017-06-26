@@ -1,3 +1,6 @@
+- name: composer
+  src: geerlingguy.composer
+
 - name: zend-framework
   src: https://github.com/thomaslorentsen/ansible-zend-framework.git
   version: origin/master
