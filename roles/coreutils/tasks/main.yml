@@ -1,15 +1,24 @@
 ---
+# run: sudo chown -R $(whoami) /usr/local/share/info
+
 # https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
 - name: install coreutils
   homebrew:
     name: coreutils
-    state: present
+    state: linked
 
 - name: install linux tools
   homebrew:
     name: "{{ item }}"
-    state: present
+    state: linked
     install_options: "--with-default-names"
+  with_items:
+    - gnu-sed
+    - gnu-tar
+
+- name: prompt user to link packages
+  debug:
+    msg: "now run: sudo rew link {{ item }}"
   with_items:
     - gnu-sed
     - gnu-tar

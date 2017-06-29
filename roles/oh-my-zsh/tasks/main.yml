@@ -13,7 +13,7 @@
 
 - name: clone giffgaff plugin
   git:
-    repo: https://github.com/roundpartner/zsh-giffgaff.git
+    repo: git@github.com:roundpartner/zsh-giffgaff.git
     dest: ~/.oh-my-zsh/custom/plugins/giffgaff
     depth: 1
     clone: yes

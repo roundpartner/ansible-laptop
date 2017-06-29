@@ -2,7 +2,13 @@
 - name: install git
   homebrew:
     name: git
-    state: present
+    state: linked
+
+- name: prompt user to link packages
+  debug:
+    msg: "now run: sudo rew link {{ item }}"
+  with_items:
+    - git
 
 - name: install global git config template
   template:
@@ -18,9 +24,4 @@
   template:
     src: gitignore
     dest: ~/.gitignore_global
-
-- name: install gpg
-  homebrew:
-    name: gpg
-    state: present
 ...

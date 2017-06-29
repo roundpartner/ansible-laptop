@@ -5,7 +5,7 @@
 [user]
         email = toml@giffgaff.co.uk
         name = Tom Lorentsen
-        signingkey = B5E87C7893A9417E
+        signingkey = 13B86E88D7141439
 
 [commit]
         gpgsign = true
