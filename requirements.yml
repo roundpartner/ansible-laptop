@@ -6,5 +6,5 @@
   version: origin/master
 
 - name: giffgaff-projects
-  src: https://github.com/roundpartner/ansible-giffgaff-projects.git
+  src: git+git@github.com:roundpartner/ansible-giffgaff-projects.git
   version: origin/master
