@@ -1,4 +1,8 @@
 ---
 - pip:
     name: glue
+
+- npm:
+    name: grunt
+    global: yes
 ...
