@@ -9,4 +9,8 @@
 - name: giffgaff-projects
   src: git+git@github.com:roundpartner/ansible-giffgaff-projects.git
   version: origin/master
+  
+- name: giffgaff-servers
+  src: git+git@github.com:roundpartner/ansible-giffgaff-servers.git
+  version: origin/master
 ...
