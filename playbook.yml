@@ -16,5 +16,8 @@
       strip_zf_requires: no
     - vagrant
     - styleguide
+    - playlists
     - oh-my-zsh
+  vars_files:
+    - vars/secret.yml
 ...

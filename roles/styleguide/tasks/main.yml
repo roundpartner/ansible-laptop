@@ -5,4 +5,8 @@
 - npm:
     name: grunt
     global: yes
+
+- npm:
+    name: angular-cli
+    global: yes
 ...

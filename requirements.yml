@@ -17,4 +17,8 @@
 - name: ssh-client
   src: git+git@github.com:thomaslorentsen/ansible-ssh-client.git
   version: origin/master
+
+- name: playlists
+  src: git+git@github.com:roundpartner/ansible-playlists.git
+  version: origin/master
 ...
