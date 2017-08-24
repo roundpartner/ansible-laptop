@@ -83,3 +83,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/
+
+alias prune="git fetch -u origin -p"
+alias commit="git commit"
+alias push="git push"
+alias add="git add -p"

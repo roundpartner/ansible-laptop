@@ -23,6 +23,8 @@
   template:
     src: zshrc
     dest: ~/.zshrc
+  tags:
+    - zsh
     
 - name: Prompt user to run command to complete installation
   pause:
