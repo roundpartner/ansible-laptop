@@ -1,7 +1,7 @@
 secret.yml
-playlists/
+composer/
 zend-framework/
 giffgaff-projects/
 giffgaff-servers/
 ssh-client/
-composer/
+playlists/
