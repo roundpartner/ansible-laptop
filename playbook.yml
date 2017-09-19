@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   roles:
+    - giffgaff-servers
     - git
     - coreutils
     - composer:

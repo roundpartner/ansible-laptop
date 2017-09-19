@@ -22,4 +22,12 @@
   with_items:
     - gnu-sed
     - gnu-tar
+
+- name: fix home brew permissions
+  file:
+    dest: /usr/local/Homebrew/
+    owner: "{{ owner }}"
+    group: "{{ group }}"
+    recurse: yes
+    state: directory
 ...
