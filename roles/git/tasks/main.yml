@@ -12,7 +12,7 @@
 
 - name: install global git config template
   template:
-    src: gitconfig
+    src: gitconfig.tpl
     dest: ~/.gitconfig
     
 - name: install git message config template

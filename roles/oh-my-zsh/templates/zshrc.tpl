@@ -86,7 +86,15 @@ source $ZSH/oh-my-zsh.sh
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/
 
+[ -f /Users/toml/.travis/travis.sh ] && source /Users/toml/.travis/travis.sh
+
 alias prune="git fetch -u origin -p"
 alias commit="git commit"
 alias push="git push"
 alias add="git add -p"
+
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+export NODE_PATH=$NODE_PATH:/Users/$USER/.nvm/versions/node/v6.11.0/lib/node_modules
+nvm use default 6.11.0 2>&1 > /dev/null
+
