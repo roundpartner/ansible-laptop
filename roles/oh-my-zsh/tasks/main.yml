@@ -21,8 +21,8 @@
 
 - name: copy zsh default config
   template:
-    src: zshrc
-    dest: ~/.zshrc.tpl
+    src: zshrc.tpl
+    dest: ~/.zshrc
   tags:
     - zsh
     
