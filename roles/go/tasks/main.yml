@@ -1,0 +1,15 @@
+---
+- name: make go directory
+  file:
+    path: "{{ home_dir }}/go"
+    state: directory
+  tags:
+    - go
+
+- name: get go present
+  command: /usr/local/go/bin/go get golang.org/x/tools/cmd/present
+  environment:
+    GOPATH: "{{ home_dir }}/go"
+  tags:
+    - go
+...

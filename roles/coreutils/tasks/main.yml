@@ -30,4 +30,18 @@
     group: "{{ group }}"
     recurse: yes
     state: directory
+
+- name: install dev ops tools
+  homebrew:
+    name: "{{ item }}"
+    state: linked
+  with_items:
+    - maven
+    - kubectl
+    - minishift
+    - minikube
+    - terraform
+    - openshift-cli
+    - kubernetes-cli
+    - ansible
 ...

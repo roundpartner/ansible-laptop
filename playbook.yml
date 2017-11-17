@@ -4,6 +4,7 @@
     - giffgaff-servers
     - git
     - coreutils
+    - go
     - composer:
       role: composer
       composer_home_owner: toml
