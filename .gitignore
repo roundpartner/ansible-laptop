@@ -5,3 +5,8 @@ giffgaff-projects/
 giffgaff-servers/
 ssh-client/
 playlists/
+roles/zend-framework
+roles/giffgaff-projects
+roles/giffgaff-servers
+roles/ssh-client
+roles/playlists
