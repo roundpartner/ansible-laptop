@@ -3,12 +3,14 @@
   homebrew:
     name: git
     state: linked
+  when: not ansible_check_mode
 
 - name: prompt user to link packages
   debug:
-    msg: "now run: sudo rew link {{ item }}"
+    msg: "now run: sudo brew link {{ item }}"
   with_items:
     - git
+  when: not ansible_check_mode
 
 - name: install global git config template
   template:

@@ -1,0 +1,62 @@
+---
+- git:
+    repo: "git@github.com:thomaslorentsen/{{ item }}"
+    dest: "~/IdeaProjects/{{ item }}"
+    update: yes
+    force: yes
+  with_items: "{{ testing_repos }}"
+
+- name: set readme
+  template:
+    src: Readme.md
+    dest: "~/IdeaProjects/{{ item }}/Readme.md"
+  with_items: "{{ testing_repos }}"
+
+- name: check git status
+  shell: git status
+  args:
+    chdir: "~/IdeaProjects/{{ item }}"
+  with_items: "{{ testing_repos }}"
+
+- name: add readme file
+  shell: "git add ."
+  args:
+    chdir: "~/IdeaProjects/{{ item }}"
+  with_items: "{{ testing_repos }}"
+
+- name: commit into all the repos
+  shell: git commit --allow-empty -m "Bump version"
+  args:
+    chdir: "~/IdeaProjects/{{ item }}"
+  with_items: "{{ testing_repos }}"
+
+- name: push a commit into all the repos
+  shell: git push
+  args:
+    chdir: "~/IdeaProjects/{{ item }}"
+  with_items: "{{ testing_repos }}"
+
+- name: commit into all the repos
+  shell: git commit --allow-empty -m "Bump version"
+  args:
+    chdir: "~/IdeaProjects/{{ item }}"
+  with_items: "{{ testing_repos }}"
+
+- name: push a commit into all the repos
+  shell: git push
+  args:
+    chdir: "~/IdeaProjects/{{ item }}"
+  with_items: "{{ testing_repos }}"
+
+- name: commit into all the repos
+  shell: git commit --allow-empty -m "Bump version"
+  args:
+    chdir: "~/IdeaProjects/{{ item }}"
+  with_items: "{{ testing_repos }}"
+
+- name: push a commit into all the repos
+  shell: git push
+  args:
+    chdir: "~/IdeaProjects/{{ item }}"
+  with_items: "{{ testing_repos }}"
+...

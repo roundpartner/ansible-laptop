@@ -2,12 +2,13 @@
 - name: check installed plugins
   command: vagrant plugin list
   register: vagrant_plugins
+  when: not ansible_check_mode
+  changed_when: no
 
 - name: install vagrant plugins
   command: "vagrant plugin install {{ item }}"
   with_items:
     - vagrant-hostsupdater
-    - vagrant-triggers
     - vagrant-cachier
-  when: 'item not in vagrant_plugins.stdout'
+  when: 'not ansible_check_mode and item not in vagrant_plugins.stdout'
 ...

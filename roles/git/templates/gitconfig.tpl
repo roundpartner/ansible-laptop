@@ -55,3 +55,5 @@
 [i18n]
   commitEncoding = UTF-8
   logOutputEncoding = UTF-8
+[http]
+	sslVerify = false

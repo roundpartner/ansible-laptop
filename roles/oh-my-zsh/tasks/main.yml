@@ -25,8 +25,9 @@
     dest: ~/.zshrc
   tags:
     - zsh
-    
+
 - name: Prompt user to run command to complete installation
   pause:
     prompt: "now run: chsh -s $(grep /zsh$ /etc/shells | tail -1)"
+  when: "'/bin/zsh' not in lookup('env','SHELL')"
 ...

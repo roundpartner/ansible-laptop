@@ -18,7 +18,7 @@
 
 - name: prompt user to link packages
   debug:
-    msg: "now run: sudo rew link {{ item }}"
+    msg: "now run: sudo brew link {{ item }}"
   with_items:
     - gnu-sed
     - gnu-tar
@@ -38,8 +38,6 @@
   with_items:
     - maven
     - kubectl
-    - minishift
-    - minikube
     - terraform
     - openshift-cli
     - kubernetes-cli
