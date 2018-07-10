@@ -4,6 +4,11 @@
     name: zsh
     state: present
 
+- name: install gdbm required by zsh
+  homebrew:
+    name: gdbm
+    state: linked
+
 - name: clone oh my zsh
   git:
     repo: https://github.com/robbyrussell/oh-my-zsh
