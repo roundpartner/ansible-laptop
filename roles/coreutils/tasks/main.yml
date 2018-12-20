@@ -42,4 +42,8 @@
     - openshift-cli
     - kubernetes-cli
     - ansible
+
+- name: install awscli
+  pip:
+    name: awscli
 ...

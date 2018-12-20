@@ -101,3 +101,5 @@ nvm use default 6.11.0 2>&1 > /dev/null
 export USER_TOKEN={{ openshift_user_token }}
 export PAAS_URL={{ openshift_paas_url }}
 export GITHUB_TOKEN={{ github_token }}
+
+alias awscli="~/.aws/okta-awscli/awscli"
