@@ -9,6 +9,7 @@
       role: composer
       composer_home_owner: toml
       composer_home_group: GIFFGAFF\Domain Users
+    - prestissimo
     - idea-projects
     - giffgaff-projects
     - zend-framework:
@@ -19,7 +20,6 @@
     - vagrant
     - styleguide
     - oh-my-zsh
-    - prestissimo
   vars_files:
     - vars/secret.yml
 ...

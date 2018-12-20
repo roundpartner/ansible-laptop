@@ -10,7 +10,7 @@
 - name: install linux tools
   homebrew:
     name: "{{ item }}"
-    state: linked
+    state: present
     install_options: "--with-default-names"
   with_items:
     - gnu-sed
