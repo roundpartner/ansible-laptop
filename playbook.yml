@@ -19,6 +19,7 @@
     - vagrant
     - styleguide
     - oh-my-zsh
+    - prestissimo
   vars_files:
     - vars/secret.yml
 ...

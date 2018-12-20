@@ -1,0 +1,6 @@
+---
+- name: install prestissimo
+  command: composer global require hirak/prestissimo
+  args:
+    creates: "{{ prestissimo_path }}"
+...
