@@ -4,7 +4,7 @@
 [user]
   email = toml@giffgaff.co.uk
   name = Tom Lorentsen
-  signingkey = 13B86E88D7141439
+  signingkey = {{ github_signing_key }}
 [color]
   ui = true
 [commit]

@@ -5,36 +5,12 @@
 - name: install coreutils
   homebrew:
     name: coreutils
-    state: linked
-
-- name: install linux tools
-  homebrew:
-    name: "{{ item }}"
     state: present
-    install_options: "--with-default-names"
-  with_items:
-    - gnu-sed
-    - gnu-tar
-
-- name: prompt user to link packages
-  debug:
-    msg: "now run: sudo brew link {{ item }}"
-  with_items:
-    - gnu-sed
-    - gnu-tar
-
-- name: fix home brew permissions
-  file:
-    dest: /usr/local/Homebrew/
-    owner: "{{ owner }}"
-    group: "{{ group }}"
-    recurse: yes
-    state: directory
 
 - name: install dev ops tools
   homebrew:
     name: "{{ item }}"
-    state: linked
+    state: present
   with_items:
     - maven
     - kubectl

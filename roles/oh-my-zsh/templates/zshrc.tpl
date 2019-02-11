@@ -94,12 +94,10 @@ alias push="git push"
 alias add="git add -p"
 
 export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
-export NODE_PATH=$NODE_PATH:/Users/$USER/.nvm/versions/node/v6.11.0/lib/node_modules
-nvm use default 6.11.0 2>&1 > /dev/null
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+nvm use default 10.15.0 2>&1 > /dev/null
 
 export USER_TOKEN={{ openshift_user_token }}
 export PAAS_URL={{ openshift_paas_url }}
 export GITHUB_TOKEN={{ github_token }}
-
-alias awscli="~/.aws/okta-awscli/awscli"

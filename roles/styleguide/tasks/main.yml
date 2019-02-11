@@ -2,11 +2,13 @@
 - pip:
     name: glue
 
+
+
+# curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+# nvm install 10.15.0
+
 - npm:
     name: grunt
     global: yes
 
-- npm:
-    name: angular-cli
-    global: yes
 ...
