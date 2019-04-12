@@ -14,6 +14,7 @@
   with_items:
     - maven
     - kubectl
+    - kubectx
     - terraform
     - openshift-cli
     - kubernetes-cli

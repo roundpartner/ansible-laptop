@@ -101,3 +101,7 @@ nvm use default 10.15.0 2>&1 > /dev/null
 export USER_TOKEN={{ openshift_user_token }}
 export PAAS_URL={{ openshift_paas_url }}
 export GITHUB_TOKEN={{ github_token }}
+
+#source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+#PS1='$(kube_ps1)'$PS1
+

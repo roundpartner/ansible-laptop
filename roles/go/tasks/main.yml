@@ -6,6 +6,11 @@
   tags:
     - go
 
+- name: install dep
+  homebrew:
+    name: dep
+    state: present
+
 - name: get go present
   command: /usr/local/go/bin/go get golang.org/x/tools/cmd/present
   environment:
