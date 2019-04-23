@@ -19,7 +19,7 @@
       strip_zf_requires: no
     - vagrant
     - styleguide
-    - oh-my-zsh
+    - {role: oh-my-zsh, tags: zsh}
   vars_files:
     - vars/secret.yml
 ...

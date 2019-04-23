@@ -105,3 +105,8 @@ export GITHUB_TOKEN={{ github_token }}
 #source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 #PS1='$(kube_ps1)'$PS1
 
+export GOPATH=$HOME/go
+
+alias {{ eks_staging }} aws eks --region {{ aws_region }} update-kubeconfig --name {{ eks_staging }}
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
